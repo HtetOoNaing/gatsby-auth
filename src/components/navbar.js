@@ -20,11 +20,12 @@ export default function NavBar() {
       }}
     >
       <span>{greetingMessage}</span>
-      <nav>
+      <nav style={{
+        display: "flex",
+				gap: '20px'
+      }}>
         <Link to="/">Home</Link>
-        {` `}
         <Link to="/app/profile">Profile</Link>
-        {` `}
         {isLoggedIn() ? (
           <a
             href="/"
