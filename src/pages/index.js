@@ -4,7 +4,7 @@ import { getUser, isLoggedIn } from "../services/auth"
 
 import Layout from "../components/layout"
 
-export default function Home() {
+const Home = () => {
   return (
     <Layout>
       <h1>Hello {isLoggedIn() ? getUser().name : "world"}!</h1>
@@ -24,3 +24,4 @@ export default function Home() {
     </Layout>
   )
 }
+export default Home;

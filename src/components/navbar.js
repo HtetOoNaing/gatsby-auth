@@ -2,7 +2,7 @@ import React from "react"
 import { Link, navigate } from "gatsby"
 import { getUser, isLoggedIn, logout } from "../services/auth"
 
-export default function NavBar() {
+const NavBar = () => {
   let greetingMessage = ""
   if (isLoggedIn()) {
     greetingMessage = `Hello ${getUser().name}`
@@ -41,3 +41,5 @@ export default function NavBar() {
     </div>
   )
 }
+
+export default NavBar;
