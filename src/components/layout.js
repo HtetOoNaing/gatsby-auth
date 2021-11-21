@@ -1,6 +1,6 @@
 import React from "react"
 
-import NavBar from "./nav-bar"
+import NavBar from "./navbar"
 
 const Layout = ({ children }) => (
   <>

@@ -16,6 +16,7 @@ export default function NavBar() {
         flex: "1",
         justifyContent: "space-between",
         borderBottom: "1px solid #d1c1e0",
+				padding: '20px'
       }}
     >
       <span>{greetingMessage}</span>
